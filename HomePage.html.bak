@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purrfect Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Adopt_Cat/responsiveness.css">
+  <link rel="stylesheet" href="HomeDesign.css">
+  <link rel="stylesheet" href="responsiveness.css">
+</head>
+<body>
+
+
+
+  <header class="nav">
+  <div class="logo">
+	<img src="Logo/logo.png" alt="Purrfect Match Logo">
+	</div>
+    <nav class="nav-links">
+      <a href="#home" id="navhome">Home</a>
+      <a href="#aboutJ" id="navabout">About Us</a>
+      <a href="#contact" id="navcontact">Contact</a>
+    </nav>
+    <div class="nav-right">
+    <a href="AdoptPage.html" id="navaac">Adopt a Cat</a>
+    </div>
+    </header>
+
+<br id="home">
+ <div class="cat-section">
+    <div class="left-side">
+      <div class="cat-content">
+	  <h1 id="typewriter">Hello there</h1>
+        <div class="tagline">Looking for a catpanion? 
+Well, you are on the right place, because this is a place where hearts meet, paws greet, and every match is purrfection</div>
+        
+        <a href="AdoptPage.html" class="btn adoptcat">
+          Adopt Now!
+        </a>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="greet"></div>
+    </div>
+  </div>
+  
+   
+  
+   <br id="aboutJ">
+  <div id="about">
+    <div class="card1">
+      <h1>About Us</h1>
+      
+    </div>
+    <div class="image" style="background-image: url('Logo/gif1.gif')"></div>
+    <div class="card2">
+      <h1>Our Long-Term Vision</h1>
+       <p>We envision a community where every cat has a safe, loving home and no animal suffers from neglect or abandonment.
+A world where compassion and adoption go hand in hand, ensuring that every cat gets the love they deserve.</p>
+    </div>
+    <div class="image" style="background-image: url('Logo/gif2.gif')"></div>
+    <div class="card3"> 
+	 <h1>Our Purpose</h1>
+	<p>Our mission is to promote responsible pet ownership and reduce the number of stray cats by encouraging adoption instead of buying 
+from pet shops. We also provide a safe and caring way for purr parents who can no longer take care of their cats to rehome them responsibly — giving every 
+cat a chance to find a new, loving family.</p>
+	</div>
+    
+    <div class="image" style="background-image: url('Logo/gif4.gif')"></div>
+  </div>
+  
+  
+  <br><br><br><br>
+  <h1 id="contact">Contact Us</h1>
+<div class="cardd">
+  
+  <div class="cardd1" onclick="window.open('https://www.facebook.com/janellamae.caingcoy', '_blank')">
+    <div class="icon-circle" style="background-color:#3b5998; color:white;">&#xf09a;</div>
+    <h3>Facebook</h3>
+    <p>Connect with us on Facebook for updates and support.</p>
+    <a class="btn1" href="https://www.facebook.com/janellamae.caingcoy" target="_blank">Visit Facebook</a>
+  </div>
+  
+  <div class="cardd2" onclick="window.location.href='mailto:vanessashannebello@gmail.com'">
+    <div class="icon-circle" style="background-color:#d44638; color:white;">&#9993;</div>
+    <h3>Gmail</h3>
+    <p>Send us an email for any inquiries or support requests.</p>
+    <a class="btn1" href="mailto:jhunneildelrosario@gmail.com">Send Email</a>
+  </div>
+  
+  <div class="cardd3" onclick="window.location.href='tel:+639614917972'">
+    <div class="icon-circle" style="background-color:#27ae60; color:white;">&#9742;</div>
+    <h3>Contact No</h3>
+    <p>Call us directly for immediate assistance.</p>
+    <a class="btn1" href="tel:+1234567890">Call Now</a>
+  </div>
+</div>
+  
+  
+  
+   <br><br><br><br>
+   <footer>
+    &copy; 2025 PurrfectMatch. All rights reserved.
+  </footer>
+  
+  
+  <script src="homeanimation.js"></script> 
+  
+</body>
+</html>

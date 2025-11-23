@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Cat</title>
+   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Adopt_Cat/AdoptPageDesign.css">
+  <link rel="stylesheet" href="responsiveness.css">
+  
+</head>
+<body>
+    <header class="nav">
+      <div class="logo">
+	    <img src="Logo/logo.png" alt="Purrfect Match Logo">
+	    </div>
+      <nav class="nav-links">
+      <a href="HomePage.html" id="navhome">Home</a>
+      <a href="HomePage.html#aboutJ" id="navabout">About Us</a>
+      <a href="HomePage.html#contact" id="navcontact">Contact</a>
+      </nav>
+      <div class="nav-right">
+      <a href="AdoptPage.html" id="navaac">Adopt a Cat</a>
+      </div>
+    </header>
+
+  <div class="searchC">
+  <img src="Logo/icon-search.png" alt="search" class="search-icon">
+    <input type="text" id="search" placeholder="Search cat breed...">
+    </div>
+	
+    <div class="filter-section">
+    <table>
+    <tr id="filterth">
+      <th>Breed</th>
+      <th>Size</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td class="filter-group">
+        <label><input type="checkbox" name="breed" value="Sphynx"> Sphynx</label><br>
+        <label><input type="checkbox" name="breed" value="Siamese"> Siamese</label><br>
+        <label><input type="checkbox" name="breed" value="Persian"> Persian</label><br>
+        <label><input type="checkbox" name="breed" value="Puspin"> Puspin</label><br>
+        <label><input type="checkbox" name="breed" value="Himalayan"> Himalayan</label>
+      </td>
+      <td class="filter-group">
+        <label><input type="checkbox" name="size" value="Small"> Small (Petite Build)</label><br>
+        <label><input type="checkbox" name="size" value="Medium"> Medium (Average Size)</label><br>
+        <label><input type="checkbox" name="size" value="Large"> Large (Big Frame)</label><br>
+        <label><input type="checkbox" name="size" value="Extra-large"> Extra-large (Giant Breed)</label>
+      </td>
+      <td class="filter-group">
+        <label><input type="checkbox" name="age" value="Kitten"> Kitten (0 - 6 months)</label><br>
+        <label><input type="checkbox" name="age" value="Junior"> Junior (7 months - 2 years)</label><br>
+        <label><input type="checkbox" name="age" value="Adult"> Adult (3 years - 6 years)</label><br>
+        <label><input type="checkbox" name="age" value="Mature"> Mature (7 years - 10 years)</label><br>
+		<label><input type="checkbox" name="age" value="Senior"> Senior (11 years - 15 years)</label>
+      </td>
+      </tr>
+    </table>
+    </div>
+
+
+  <div class="cat-frame border-none" id="cats"></div>
+
+  <div class="form-container none" id="adoptForm">
+  <form>
+    
+    <div class="form-row">
+      <div class="form-col">
+        <img id="catImage" src="" alt="Cat Picture" class="form-img">
+      </div>
+      <div class="form-col">
+        <p><strong>Breed:</strong> <span id="catBreed"></span></p>
+        <p><strong>Age:</strong> <span id="catAge"></span></p>
+        <p><strong>Size:</strong> <span id="catSize"></span></p>
+      </div>
+    </div>
+
+    <!-- Row 3: 2 columns -->
+    <div class="form-row">
+      <div class="form-col">
+        <label for="yourName">Your Name:</label>
+        <input type="text" id="yourName" class="form-input" required  pattern="^[A-Za-z\s]+$" placeholder="Enter your full name">
+        <small class="error-message" id="nameError"></small>
+      </div>
+      <div class="form-col"><label for="email">Email:</label>
+        <input type="text" id="email" class="form-input" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="Enter your email address">
+        <small class="error-message" id="emailError"></small>
+      </div>
+      <div class="form-col">
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" class="form-input" required pattern="^09[0-9]{9}$" maxlength="11" placeholder="Enter your contact number" title="Please enter a valid 11-digit number starting with 09">
+        <small class="error-message" id="contactError"></small>
+      </div>
+    </div>
+
+    <!-- Row 3: 1 column -->
+    <div class="form-row single">
+      <label class="consent"><input type="checkbox" required>I confirm that I understand the responsibilities of 
+        adopting a cat and agree to provide proper care, shelter, and love.
+        I also consent to the collection and management of my personal 
+        information by the adoption team for verification and contact purposes, 
+        in accordance with data privacy guidelines.</label>
+
+      <label for="schedule" class="form-input">Schedule: Select a date when you want to meet.</label>
+      <input type="date" id="schedule" class="form-input" required>
+    </div>
+
+    <!-- Row 4: 1 column -->
+    <div class="form-row">
+      <button type="button" id="closebtn" class="form-button">Close</button>
+      <button type="submit" class="form-button" onclick="submitAdoption(event)">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+  <div class="pagination">
+    <button id="prevBtn">Previous</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="Adopt_Cat/AdoptPageScript.js">
+  </script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0; padding: 0;
+  font-family: 'Fredoka One', cursive, Arial, sans-serif;
+  background: #fcf9ea;
+  color: black;
+  min-height: 100%;
+}
+
+.nav {
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1400px;
+  background: #fcf9ea;
+  border: 3px solid black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  user-select: none;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+  color: #b6e2a1;
+  transform: scale(1.1);
+  outline: none;
+}
+
+#navabout:hover { color: lightblue; }
+#navcontact:hover { color: #febe8c; }
+#navaac:hover { color: black; }
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  background-color: lightpink;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   border-radius: 25px;
+   border: 3px solid black;
+  color: black;
+  font-weight: 600;
+  padding: 10px 9px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  border-radius: 50px;
+}
+
+.nav-right a:hover, .nav-right a:focus {
+  color: black;
+  background-color: lightgreen;
+  transform: scale(1.05);
+}
+
+
+
+
+.cat-frame{
+  border-radius: 15px;
+  background-color: #fcf9ea;
+    padding: 10px;
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.framecolor {
+	 background-color: #fffbc1;
+	
+}
+
+.adopt-me{
+  font-size: 15px;
+  font-family: 'Fredoka One', cursive, Arial, sans-serif;
+  padding: 8px 10px;
+  border-radius: 50px;
+  border: 3px solid black;
+  background: lightpink;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2b2b2b;
+  transition: transform 0.3s ease;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adopt-me:hover{
+  background-color: greenyellow;
+   transform: scale(1.1);
+}
+
+.border-none{
+  border-style: none;
+}
+
+.center{
+  text-align: center;
+  font-size: 50px;
+}
+
+table {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+td{
+  padding: 5px;
+  accent-color: pink;
+}
+
+@media (max-width: 768px) {
+  td{
+    font-size: 55%;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  background-color: lightblue;
+  font-family: 'Fredoka One', cursive, Arial, sans-serif;
+  color: black;
+  border: 3px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+	background-color: lightgreen;
+}
+
+.pagination button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.cat-frame > * {
+  transition: all 0.3s ease;
+}
+
+.cat-img {
+  border: 3px solid black;
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1px;
+}
+
+.none {
+  display: none; /* nakatago sa simula */
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff8ee;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 500px;
+  max-width: 90%;
+}
+
+
+form {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 15px;
+  font-size: 80%;
+}
+
+.form-container{
+	border: 10px solid black;
+}
+
+
+.framecolor:hover,
+.framecolor:focus {
+  box-shadow: 0 12px 32px rgba(53, 53, 53, 0.3);
+  transform: translateY(-6px) scale(1.02);
+  outline: none;
+}
+
+
+
+
+
+
+/* bawat row */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 15px;
+}
+
+/* kapag single column */
+.form-row.single {
+  grid-template-columns: 1fr;
+}
+
+/* columns */
+.form-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* inputs at labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.consent{
+  text-decoration: none;
+  text-align: justify;
+}
+
+
+/* image */
+.form-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+
+
+/* button */
+.form-button {
+font-family: 'Fredoka One', cursive, Arial, sans-serif;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #f4b4b4;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-button:hover {
+  background-color: lime;
+}
+
+#closebtn:hover{
+  background-color: red;
+}
+
+.searchC{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+  display: none;
+}
+
+
+
+#search {
+	width: 500px;
+    padding: 6px 8px;
+    font-size: 16px;
+    border: 3px solid black;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  
+  .search::placeholder {
+    color: gray; 
+}
+
+
+
+
+.searchC {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 320px;
+}
+
+.searchC input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex-grow: 1;            
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.searchC:hover {
+	backround-color: #d3dcf9	;
+}
+
+
+
+
+#filterth {
+	text-transform: uppercase;
+}
+
+
+
+ .filter-section label:hover, #filterth th:hover,
+ .filter-section label:focus, #filterth th:focus {
+    color: #febe8c;
+  }
+  
+  
+ #yourName, #email, #contact {
+	 border: 3px solid black;
+	 border-radius: 10px;
+	 padding: 5px;
+ }
+ 
+.form-input {
+	border: 3px solid black;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+	{
+	 border: 3px solid black;
+}

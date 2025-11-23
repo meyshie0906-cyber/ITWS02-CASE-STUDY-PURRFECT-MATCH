@@ -1,0 +1,302 @@
+//Cats data set and display
+
+const cats = [
+  { breed: "Sphynx", size: "Large", age: "Adult", img: "Cats/SphynxAdult1.jpg"},
+  { breed: "Puspin", size: "Medium", age: "Adult", img: "Cats/PuspinAdult1.jpg"},
+  { breed: "Persian", size: "Large", age: "Junior", img: "Cats/PersianJunior1.jpg"},
+  { breed: "Siamese", size: "Small", age: "Kitten", img: "Cats/SiameseKitten1.jpg"},
+  { breed: "Himalayan", size: "Medium", age: "Adult", img: "Cats/HimalayanAdult1.jpg"},
+
+  { breed: "Puspin", size: "Small", age: "Kitten", img: "Cats/PuspinKitten1.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Junior", img: "Cats/SiameseJunior1.jpg"},
+  { breed: "Persian", size: "Small", age: "Kitten" , img: "Cats/PersianKitten1.jpg"},
+  { breed: "Sphynx", size: "Extra-large", age: "Adult" , img: "Cats/SphynxAdult2.jpg"},
+  { breed: "Himalayan", size: "Small", age: "Kitten", img: "Cats/HimalayanKitten1.jpg"},
+  { breed: "Puspin", size: "Small", age: "Junior" , img: "Cats/PuspinJunior1.jpg"},
+  { breed: "Persian", size: "Medium", age: "Junior" , img: "Cats/PersianJunior2.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Junior" , img: "Cats/SiameseJunior2.jpg"},
+  { breed: "Sphynx", size: "Small", age: "Junior" , img: "Cats/SphynxJunior1.jpg"}, 
+  { breed: "Himalayan", size: "Small", age: "Junior" , img: "Cats/HimalayanJunior1.jpg"},
+  { breed: "Persian", size: "Medium", age: "Adult" , img: "Cats/PersianAdult1.jpg"},
+  { breed: "Puspin", size: "Large", age: "Adult" , img: "Cats/PuspinAdult2.jpg"},
+  { breed: "Siamese", size: "Medim", age: "Adult" , img: "Cats/SiameseAdult1.jpg"},
+  { breed: "Sphynx", size: "Small", age: "Kitten" , img: "Cats/SphynxKitten1.jpg"},
+  { breed: "Himalayan", size: "Extra-large", age: "Junior" , img: "Cats/HimalayanJunior2.jpg"},
+  { breed: "Puspin", size: "Small", age: "Junior" , img: "Cats/PuspinJunior2.jpg"},
+  { breed: "Persian", size: "Small", age: "Kitten" , img: "Cats/PersianKitten2.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Adult" , img: "Cats/SiameseAdult3.jpg"},
+  { breed: "Sphynx", size: "Medium", age: "Senior" , img: "Cats/SphynxSenior1.jpg"},
+  { breed: "Himalayan", size: "Medium", age: "Adult" , img: "Cats/HimalayanAdult2.jpg"},
+  { breed: "Puspin", size: "Medium", age: "Junior" , img: "Cats/PuspinJunior3.jpg"},
+  { breed: "Persian", size: "Medium", age: "Junior" , img: "Cats/PersianJunior4.jpg"},
+  { breed: "Siamese", size: "Small", age: "Junior" , img: "Cats/SiameseJunior3.jpg"},
+  { breed: "Sphynx", size: "Small", age: "Junior" , img: "Cats/SphynxJunior2.jpg"},
+  { breed: "Himalayan", size: "Small", age: "Kitten" , img: "Cats/HimalayanKitten2.jpg"},
+  { breed: "Puspin", size: "Small", age: "Kitten" , img: "Cats/PuspinKitten2.jpg"},
+  { breed: "Persian", size: "Medium", age: "Junior" , img: "Cats/PersianJunior3.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Junior" , img: "Cats/SiameseJunior4.jpg"},
+  { breed: "Sphynx", size: "Large", age: "Adult" , img: "Cats/SphynxAdult3.jpg"},
+  { breed: "Himalayan", size: "Medium", age: "Junior" , img: "Cats/HimalayanJunior3.jpg"},
+  { breed: "Puspin", size: "Small", age: "Junior" , img: "Cats/PuspinJunior4.jpg"},
+  { breed: "Persian", size: "Small", age: "Kitten" , img: "Cats/PersianKitten3.jpg"}, 
+  { breed: "Siamese", size: "Medium", age: "Junior" , img: "Cats/SiameseJunior5.jpg"},
+  { breed: "Sphynx", size: "Large", age: "Junior" , img: "Cats/SphynxJunior3.jpg"},
+  { breed: "Himalayan", size: "Large", age: "Junior" , img: "Cats/HimalayanJunior4.jpg"},
+  { breed: "Puspin", size: "Extra-large", age: "Mature" , img: "Cats/PuspinMature1.jpg"},
+  { breed: "Persian", size: "Medium", age: "Junior" , img: "Cats/PersianJunior5.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Adult" , img: "Cats/SiameseAdult2.jpg"},
+  { breed: "Sphynx", size: "Medium", age: "Mature" , img: "Cats/SphynxMature1.jpg"},
+  { breed: "Himalayan", size: "Large", age: "Adult" , img: "Cats/HimalayanAdult3.jpg"},
+  { breed: "Puspin", size: "Small", age: "Junior" , img: "Cats/PuspinJunior5.jpg"},
+  { breed: "Persian", size: "Large", age: "Mature" , img: "Cats/PersianMature1.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Junior" , img: "Cats/SiameseJunior6.jpg"},
+  { breed: "Sphynx", size: "Small", age: "Junior" , img: "Cats/SphynxJunior4.jpg"},
+  { breed: "Himalayan", size: "Medium", age: "Junior" , img: "Cats/HimalayanJunior5.jpg"},
+  { breed: "Puspin", size: "Small", age: "Kitten" , img: "Cats/PuspinKitten3.jpg"},
+  { breed: "Persian", size: "Large", age: "Adult" , img: "Cats/PersianAdult2.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Junior" , img: "Cats/SiameseJunior7.jpg"},
+  { breed: "Sphynx", size: "Extra-large", age: "Mature" , img: "Cats/SphynxMature2.jpg"},
+  { breed: "Himalayan", size: "Medium", age: "Junior" , img: "Cats/HimalayanJunior6.jpg"},
+  { breed: "Puspin", size: "Medium", age: "Junior" , img: "Cats/PuspinJunior6.jpg"},
+  { breed: "Persian", size: "Medium", age: "Junior" , img: "Cats/PersianJunior6.jpg"},
+  { breed: "Siamese", size: "Medium", age: "Junior" , img: "Cats/SiameseJunior8.jpg"}
+]; // array of cats
+
+cats.forEach(c => {
+  if (typeof c.adopted === 'undefined') c.adopted = false;
+});
+
+const container = document.getElementById("cats"); //lalagyan ni cats
+const breedCheckboxes = document.querySelectorAll('input[name="breed"]'); //lalagyan ng mga checkboxes na may breed name
+const sizeCheckboxes = document.querySelectorAll('input[name="size"]'); // same as line 66
+const ageCheckboxes = document.querySelectorAll('input[name="age"]'); // same lang sa line 66
+
+let filteredCats = [...cats]; // inaadopt nya lang yung value ni array cats, eto yung gagamitin natin sa pag-display ng final cats
+let currentPage = 1; //nasa variable na yung keyword
+const catsPerPage = 12; // same sa line 71
+
+// DISPLAY FUNCTION
+function displayCats() {
+  container.innerHTML = ''; //empty containter para hindi ma doble yung ma display, parang pang buffer lang sya
+
+  const totalPages = Math.ceil(filteredCats.length / catsPerPage); //dinevide lang yung 58 sa 12
+  const start = (currentPage - 1) * catsPerPage; //page 1 = starts at index 0 cat
+  const end = start + catsPerPage; //page 1 = 0 + 12 therefore the end is the 12 cat
+  const catsToShow = filteredCats.slice(start, end); //final na output para sa cats, yung nasa loob if page 1 is [0, 12), since excluded si 12
+
+  if (catsToShow.length === 0) {
+    container.innerHTML = '<p class="center">No cats found.</p>';// conditional statement para alam ni user if walang yung cat
+    return; //return the whole statement within if
+  }
+const visibleCats = catsToShow.filter(c => !c.adopted);
+
+visibleCats.forEach(cat => {//loop lang to para maikli lang yung code sa pag display ng cats
+    const div = document.createElement("div"); //from the word create, gumawa lang ng panibagong div element
+  
+    div.classList.add("framecolor");
+	div.classList.add("cat-frame"); //dito naman nakalagay yung class css, pwedeng multiple class ilagay jan
+    const imgSrc = cat.img ? cat.img : "Pics/default.jpg"; //aalisin din to kapag may mga pics na
+    div.innerHTML = `
+      <img src="${cat.img}" alt="${cat.breed}" class="cat-img">
+      <h3>${cat.breed}</h3>
+      <p>Size: ${cat.size}</p>
+      <p>Age: ${cat.age}</p>
+      <button class="adopt-me" onclick="formFunction('${cat.breed}', '${cat.age}', '${cat.size}', '${cat.img}')">Adopt Me</button>
+    `; //yung loob neto parang html ka lang, yung $ para sa mga values since hindi lang iisa value nya 
+   
+    container.appendChild(div); //pinapasa nya lang yung mga value ni div.innerHTML sa container.innerHTML
+  });
+
+  // Update pagination text/buttons
+  document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`; //dinidisplay yung value ng pages,like this Page 1 of 3
+  document.getElementById('prevBtn').disabled = (currentPage === 1); // pang disable ng buttons
+  document.getElementById('nextBtn').disabled = (currentPage === totalPages); // same as line 104
+}
+
+// FILTER FUNCTION
+function filterCats() {
+  const selectedBreeds = [...breedCheckboxes].filter(b => b.checked).map(b => b.value);
+  const selectedSizes = [...sizeCheckboxes].filter(s => s.checked).map(s => s.value);
+  const selectedAges = [...ageCheckboxes].filter(a => a.checked).map(a => a.value);
+  const searchTerm = document.getElementById('search').value.toLowerCase();
+
+  filteredCats = cats.filter(cat => {
+
+    if (cat.adopted) return false;
+
+    const matchBreed = selectedBreeds.length === 0 || selectedBreeds.includes(cat.breed);
+    const matchSize = selectedSizes.length === 0 || selectedSizes.includes(cat.size);
+    const matchAge = selectedAges.length === 0 || selectedAges.includes(cat.age);
+    const matchSearch = cat.breed.toLowerCase().includes(searchTerm);
+    return matchBreed && matchSize && matchAge && matchSearch;
+  });
+
+  currentPage = 1; // Reset to first page after filtering
+  displayCats();
+}
+
+// PAGE CONTROL
+document.getElementById('prevBtn').addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    displayCats();
+  }
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+  const totalPages = Math.ceil(filteredCats.length / catsPerPage);
+  if (currentPage < totalPages) {
+    currentPage++;
+    displayCats();
+  }
+});
+document.getElementById('search').addEventListener('input', filterCats);
+// Add event listeners to checkboxes
+[...breedCheckboxes, ...sizeCheckboxes, ...ageCheckboxes].forEach(cb =>
+  cb.addEventListener('change', filterCats)
+);
+
+   
+
+function formFunction( breed, age, size, imgSrc){
+  const form = document.getElementById("adoptForm");
+  form.style.display = "block";
+   form.dataset.catBreed = breed;
+  form.dataset.catAge = age;
+  form.dataset.catSize = size;
+  form.dataset.catImg = imgSrc;
+
+  // Lagay details sa form
+  document.getElementById("catBreed").textContent = breed;
+  document.getElementById("catAge").textContent = age;
+  document.getElementById("catSize").textContent = size;
+  document.getElementById("catImage").src = imgSrc;
+
+  const closeBtn = document.getElementById("closebtn");
+  if (closeBtn && !closeBtn.dataset.listenerAttached) {
+    closeBtn.addEventListener("click", () => {
+      form.style.display = "none";
+    });
+    closeBtn.dataset.listenerAttached = "true";
+  }
+}
+
+
+function submitAdoption(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("yourName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const contact = document.getElementById("contact").value.trim();
+  const consent = document.querySelector('input[type="checkbox"][required]');
+  const schedule = document.getElementById('schedule').value.trim();;
+  const contactError = document.getElementById('contactError');
+  const nameError = document.getElementById('nameError');
+  const emailError = document.getElementById('emailError');
+  if (!name || !contact || !consent.checked || !schedule || !email) {
+    alert("Please fill in all required fields.");
+    return;
+  }
+
+  const pattern = /^(09|\+639)\d{9}$/;
+
+  if (!pattern.test(contact)) {
+    contactError.textContent = "Please enter a valid 11-digit number starting with 09.";
+    contactError.style.display = 'block';
+    return;
+  } else {
+    contactError.textContent = "";
+    contactError.style.display = 'none';
+  }
+
+  const patternName = /^[A-Za-z\s]+$/;
+
+  if (!patternName.test(name)) {
+  nameError.textContent = "Please enter a valid name.";
+  nameError.style.display = "block";
+  return;
+  } else {
+    nameError.textContent = "";
+    nameError.style.display = 'none';
+  }
+
+  const patternEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(!patternEmail.test(email)){
+    emailError.textContent = "Please enter a valid email.";
+    emailError.style.display = "block";
+  return;
+  } else {
+    emailError.textContent = "";
+    emailError.style.display = 'none';
+  }
+
+
+  const form = document.getElementById("adoptForm");
+  const breed = form.dataset.catBreed;
+  const age = form.dataset.catAge;
+  const size = form.dataset.catSize;
+  const img = form.dataset.catImg;
+
+  // find first cat that matches AND is not yet adopted
+  const catToAdopt = cats.find(c =>
+    c.breed === breed &&
+    String(c.age) === String(age) &&
+    c.size === size &&
+    ((c.img ? c.img : "Pics/default.jpg") === img) &&
+    !c.adopted
+  );
+
+  catToAdopt.adopted = true;
+
+  alert(`Congrats! You found your purrfect catpanion.`);
+  form.style.display = "none";
+  console.log("cat has been adopted");
+  // refresh filteredCats & UI
+  filterCats();
+}
+
+// INITIAL DISPLAY
+displayCats();
+
+
+
+
+
+
+
+
+const input = document.getElementById('search');
+const message = 'Search cat breed...';
+
+let index = 0;
+let isDeleting = false;
+
+function animatePlaceholder() {
+  if (!isDeleting && index <= message.length) {
+    // Typing
+    input.placeholder = message.substring(0, index);
+    index++;
+  } else if (isDeleting && index >= 0){
+    // Backspacing
+    input.placeholder = message.substring(0, index);
+    index--;
+  }
+
+  if (index === message.length + 1) {
+    // Start deleting
+    isDeleting = true;
+  } else if (index === -1) {
+    // Start typing again
+    isDeleting = false;
+    index = 0;
+  }
+
+  // Adjust speed for typing and deleting for natural effect
+  const speed = isDeleting ? 100 : 200;
+  setTimeout(animatePlaceholder, speed);
+}
+
+animatePlaceholder();
+
+
