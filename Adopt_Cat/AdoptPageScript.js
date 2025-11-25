@@ -101,7 +101,7 @@ visibleCats.forEach(cat => {//loop lang to para maikli lang yung code sa pag dis
       <h3>${cat.breed}</h3>
       <p>Size: ${cat.size}</p>
       <p>Age: ${cat.age}</p>
-      <button class="adopt-me" onclick="formFunction('${cat.breed}', '${cat.age}', '${cat.size}', '${cat.img}')">Adopt Me</button>
+      <button type="button" class="adopt-me" name="Adopt"onclick="formFunction('${cat.breed}', '${cat.age}', '${cat.size}', '${cat.img}')">Adopt Me</button>
     `; //yung loob neto parang html ka lang, yung $ para sa mga values since hindi lang iisa value nya 
    
     container.appendChild(div); //pinapasa nya lang yung mga value ni div.innerHTML sa container.innerHTML
@@ -246,6 +246,11 @@ function submitAdoption(event) {
     ((c.img ? c.img : "Pics/default.jpg") === img) &&
     !c.adopted
   );
+
+  const ok = confirm("Are you sure you want to adopt this cat?");
+if (!ok) {
+  return;
+}
 
   catToAdopt.adopted = true;
 

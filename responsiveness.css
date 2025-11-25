@@ -62,20 +62,28 @@
 @media (max-width: 795px) {
   .cat-section {
     flex-direction: column;
-    height: 1350px;
+    height: 1390px;
     padding: 20px;
     margin: 70px auto 20px;
   }
+  .card2, .card3{
+    font-size: 13px;
+  }
   .tagline{
 	  font-size: 20px;
-	  margine-bottom: 5px; 
+	  margin-bottom: 5px; 
   }
-  .left-side, .right-side {
+  .left-side {
     flex: none;
+    margin-top: 200px;
+    height: 50px;
     width: 100%;
   }
+  .right-side{
+    margin-top: 150px;
+  }
   .greet {
-    height: 880px;
+    height: 920px;
     margin-top: 30px;
     max-width: none;
 	border: none;
@@ -98,9 +106,10 @@
   .cat-section {
     padding: 15px;
     margin: 60px auto 15px;
+    height:910px;
   }
   .greet {
-    height: 250px;
+    height: 550px;
   }
   .cat-content h1 {
     font-size: 50px;
@@ -133,6 +142,15 @@
   .card p {
     font-size: 14px;
   }
+  .left-side{
+    margin-top: 280px;
+  }
+  .right-side{
+    margin-top: 100px;
+  }
+  .greet{
+    height: 900px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -155,7 +173,6 @@
 /* Responsive: Stack contact cards on small screens */
 @media (max-width: 768px) {
   #contact {
-    font-size: 32px;
     margin-bottom: 30px;
   }
   .cardd {
@@ -177,5 +194,43 @@
   }
   input{
 	  margin: 0;
+  }
+}
+
+@media (max-width: 678px) {
+  .cat-section{
+    height: 1100px;
+  }
+  .left-side{
+    margin-top: 120px;
+    height: 100px;
+  }
+  .right-side{
+    margin-top: 50px;
+  }
+  .greet{
+    height: 770px;
+  }
+}
+
+@media (max-width: 500px){
+  .cat-section{
+    height: 510px;
+  }
+  #typewriter{
+    font-size: 30px;
+  }
+  .tagline{
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  .left-side{
+    margin-top: 70px;
+    height: 100px;
+  }
+  .greet{
+    margin-top: 10px;
+    height: 250px;
+    width: 200px;
   }
 }

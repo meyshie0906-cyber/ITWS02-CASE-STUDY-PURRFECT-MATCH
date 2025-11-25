@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Adopt_Cat/AdoptPageDesign.css">
   <link rel="stylesheet" href="responsiveness.css">
-  
+  <link rel="stylesheet" href="Adopt_Cat/AdoptPageResponsive.css">
 </head>
 <body>
     <header class="nav">
@@ -74,9 +74,9 @@
         <img id="catImage" src="" alt="Cat Picture" class="form-img">
       </div>
       <div class="form-col">
-        <p><strong>Breed:</strong> <span id="catBreed"></span></p>
-        <p><strong>Age:</strong> <span id="catAge"></span></p>
-        <p><strong>Size:</strong> <span id="catSize"></span></p>
+        <p class="margin"><strong>Breed:</strong> <span id="catBreed"></span></p>
+        <p class="margin"><strong>Age:</strong> <span id="catAge"></span></p>
+        <p class="margin"><strong>Size:</strong> <span id="catSize"></span></p>
       </div>
     </div>
 
@@ -88,7 +88,7 @@
         <small class="error-message" id="nameError"></small>
       </div>
       <div class="form-col"><label for="email">Email:</label>
-        <input type="text" id="email" class="form-input" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="Enter your email address">
+        <input type="text" id="email" autocomplete="off" class="form-input" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="Enter your email address">
         <small class="error-message" id="emailError"></small>
       </div>
       <div class="form-col">
@@ -100,14 +100,14 @@
 
     <!-- Row 3: 1 column -->
     <div class="form-row single">
-      <label class="consent"><input type="checkbox" required>I confirm that I understand the responsibilities of 
+      <label class="consent"><input name="consent" type="checkbox" required>I confirm that I understand the responsibilities of 
         adopting a cat and agree to provide proper care, shelter, and love.
         I also consent to the collection and management of my personal 
         information by the adoption team for verification and contact purposes, 
         in accordance with data privacy guidelines.</label>
 
-      <label for="schedule" class="form-input">Select a date for meet up.</label>
-      <input type="date" id="schedule" class="form-input" required>
+      <label for="schedule" class="form-input" id="dateLabel">Select a date for meet up.</label>
+      <input type="date" name="sched" autocomplete="off" id="schedule" class="form-input" required>
     </div>
 
     <!-- Row 4: 1 column -->

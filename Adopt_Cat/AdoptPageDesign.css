@@ -91,7 +91,10 @@ body, html {
   transform: scale(1.05);
 }
 
-
+p, h3{
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
 
 
 .cat-frame{
@@ -108,7 +111,6 @@ body, html {
 
 .framecolor {
 	 background-color: #fffbc1;
-	
 }
 
 .adopt-me{
@@ -151,11 +153,6 @@ td{
   accent-color: pink;
 }
 
-@media (max-width: 768px) {
-  td{
-    font-size: 55%;
-  }
-}
 
 .pagination {
   display: flex;
@@ -235,10 +232,6 @@ form {
 }
 
 
-
-
-
-
 /* bawat row */
 .form-row {
   display: grid;
@@ -249,6 +242,7 @@ form {
 /* kapag single column */
 .form-row.single {
   grid-template-columns: 1fr;
+  min-width: 0;
 }
 
 /* columns */
@@ -277,11 +271,14 @@ label {
   border: 3px solid black;
 }
 
-
+.margin{
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
 
 /* button */
 .form-button {
-font-family: 'Fredoka One', cursive, Arial, sans-serif;
+  font-family: 'Fredoka One', cursive, Arial, sans-serif;
   padding: 10px;
   border: 3px solid black;
   border-radius: 10px;
@@ -313,7 +310,7 @@ font-family: 'Fredoka One', cursive, Arial, sans-serif;
 
 
 #search {
-	width: 500px;
+	  width: 500px;
     padding: 6px 8px;
     font-size: 16px;
     border: 3px solid black;
@@ -357,7 +354,7 @@ font-family: 'Fredoka One', cursive, Arial, sans-serif;
 }
 
 .searchC:hover {
-	backround-color: #d3dcf9	;
+	background-color: #d3dcf9	;
 }
 
 
@@ -387,6 +384,3 @@ font-family: 'Fredoka One', cursive, Arial, sans-serif;
 	border-radius: 10px;
 }
 
-	{
-	 border: 3px solid black;
-}
