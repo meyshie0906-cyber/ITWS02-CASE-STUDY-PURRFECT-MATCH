@@ -232,10 +232,6 @@ form {
 }
 
 
-
-
-
-
 /* bawat row */
 .form-row {
   display: grid;
@@ -246,6 +242,7 @@ form {
 /* kapag single column */
 .form-row.single {
   grid-template-columns: 1fr;
+  min-width: 0;
 }
 
 /* columns */
@@ -281,7 +278,7 @@ label {
 
 /* button */
 .form-button {
-font-family: 'Fredoka One', cursive, Arial, sans-serif;
+  font-family: 'Fredoka One', cursive, Arial, sans-serif;
   padding: 10px;
   border: 3px solid black;
   border-radius: 10px;
@@ -313,7 +310,7 @@ font-family: 'Fredoka One', cursive, Arial, sans-serif;
 
 
 #search {
-	width: 500px;
+	  width: 500px;
     padding: 6px 8px;
     font-size: 16px;
     border: 3px solid black;
