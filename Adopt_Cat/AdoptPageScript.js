@@ -6,7 +6,6 @@ const cats = [
   { breed: "Persian", size: "Large", age: "Junior", img: "Cats/PersianJunior1.jpg"},
   { breed: "Siamese", size: "Small", age: "Kitten", img: "Cats/SiameseKitten1.jpg"},
   { breed: "Himalayan", size: "Medium", age: "Adult", img: "Cats/HimalayanAdult1.jpg"},
-
   { breed: "Puspin", size: "Small", age: "Kitten", img: "Cats/PuspinKitten1.jpg"},
   { breed: "Siamese", size: "Medium", age: "Junior", img: "Cats/SiameseJunior1.jpg"},
   { breed: "Persian", size: "Small", age: "Kitten" , img: "Cats/PersianKitten1.jpg"},
@@ -248,10 +247,10 @@ function submitAdoption(event) {
   );
 
   const ok = confirm("Are you sure you want to adopt this cat?");
-if (!ok) {
-  return;
-}
-
+  if (!ok) {
+    console.log("adoption cancelled");
+    return;
+  }
   catToAdopt.adopted = true;
 
   alert(`Congrats! You found your purrfect catpanion.`);
@@ -263,12 +262,6 @@ if (!ok) {
 
 // INITIAL DISPLAY
 displayCats();
-
-
-
-
-
-
 
 
 const input = document.getElementById('search');
@@ -303,5 +296,3 @@ function animatePlaceholder() {
 }
 
 animatePlaceholder();
-
-
