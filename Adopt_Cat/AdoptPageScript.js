@@ -89,12 +89,11 @@ function displayCats() {
   }
 const visibleCats = catsToShow.filter(c => !c.adopted);
 
-visibleCats.forEach(cat => {//loop lang to para maikli lang yung code sa pag display ng cats
+  visibleCats.forEach(cat => {//loop lang to para maikli lang yung code sa pag display ng cats
     const div = document.createElement("div"); //from the word create, gumawa lang ng panibagong div element
   
     div.classList.add("framecolor");
 	div.classList.add("cat-frame"); //dito naman nakalagay yung class css, pwedeng multiple class ilagay jan
-    const imgSrc = cat.img ? cat.img : "Pics/default.jpg"; //aalisin din to kapag may mga pics na
     div.innerHTML = `
       <img src="${cat.img}" alt="${cat.breed}" class="cat-img">
       <h3>${cat.breed}</h3>
@@ -122,7 +121,6 @@ function filterCats() {
   filteredCats = cats.filter(cat => {
 
     if (cat.adopted) return false;
-
     const matchBreed = selectedBreeds.length === 0 || selectedBreeds.includes(cat.breed);
     const matchSize = selectedSizes.length === 0 || selectedSizes.includes(cat.size);
     const matchAge = selectedAges.length === 0 || selectedAges.includes(cat.age);
